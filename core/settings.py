@@ -30,7 +30,7 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = env-list("ALLOWED_HOSTS")
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
 
 
 # Application definition
@@ -45,7 +45,7 @@ DJANGO_APPS = [
 ]
 
 PROJECT_APPS = [
-    
+    'apps.blog'
 ]
 
 THIRD_PARTY_APPS = [
